@@ -11,14 +11,17 @@
   <link rel="stylesheet" href="style.css">
   <script src="./calculadora.js" defer></script>
 </head>
+<button id="themeSwitcher">Switch Theme: Dark/Light</button>
 <body>
-  <main data-theme="dark">
+  <main class="fundo" data-theme="dark">
     <header class="flex align-center justify-between">
-      <h1>Calculadora JS</h1>
-      <button id="themeSwitcher">Switch Theme: Dark/Light</button>
+      <h1>Calculadora JS</h1>      
     </header>
-    <input type="text" id="input">
+
+    <input type="text" id="input">  
+    
     <div id="keys">
+      
       <button id="clear">C</button>
       <button class="charKey" data-value=" ( ">(</button>
       <button class="charKey" data-value=" ) ">)</button>
@@ -40,10 +43,11 @@
       <button class="charKey" data-value=" % ">mod</button>
       <button id="equal">=</button>
     </div>
-    <section class="flex align-center justify-between">
-      <button id="copyToClipboard">Copy</button>
+    <section class="return">          
       <input type="text" id="result" disabled>
+      <button id="copyToClipboard">Copy</button>  
     </section>
   </main>
+  
 </body>
 </html>
