@@ -143,3 +143,36 @@ input {
   border-color: var(--primary-color) !important;
   color: var(--primary-color) !important;
 }
+
+@media (max-width: 425px){
+
+  button {
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: .25rem;
+    text-align: center;
+    font-weight: 700;
+    padding: .5rem 1rem;
+    transition: .15s;
+  }
+
+  #keys {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    margin: 20px 1px;
+    padding: 1px 1px;
+    border-radius: 15px;
+   }
+
+  #keys button {
+    display:grid;
+    margin: 0 1px;
+    max-width: 13rem;
+    font-size: 19px;
+    padding: 0 1.5rem 2.5rem;    
+    border-radius: 10px;
+    position: relative;   
+  }
+
+}
