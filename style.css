@@ -28,7 +28,6 @@ main {
   max-width: 35rem;
   padding: 0 1.5rem 2.5rem;
   border-radius: 10px;
-  position: relative;
 }
 
 header {
@@ -92,11 +91,10 @@ input {
   background-color:#3ab9e4;
   box-shadow: 2px 2px 0 1.5px #168bb3, inset 2.5px 2.5px #052e3b;
   color: white;
-  border-radius: 10px;
+  border-radius: 18px;
   height: 2.1em;
+  transition: .15s;
 }
-
-
 
 #keys button:hover {
   filter: brightness(0.8);
@@ -131,8 +129,7 @@ input {
   color: var(--font-color);
   cursor: pointer;
   display: block;
-  width: 120px;
- 
+  width: 120px; 
 }
 
 .error {
@@ -145,7 +142,6 @@ input {
 }
 
 @media (max-width: 425px){
-
   button {
     background-color: var(--primary-color);
     border: none;
@@ -156,13 +152,21 @@ input {
     transition: .15s;
   }
 
+  h1{
+    font-size: 2rem;
+  }
+
+  input {
+    font-size: 1.5rem;
+  }
+
   #keys {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1rem;
     margin: 20px 1px;
     padding: 1px 1px;
-    border-radius: 15px;
+    border-radius: 15px;    
    }
 
   #keys button {
@@ -170,9 +174,48 @@ input {
     margin: 0 1px;
     max-width: 13rem;
     font-size: 19px;
-    padding: 0 1.5rem 2.5rem;    
+    padding: 0.6rem 1.2rem 1.5rem;    
     border-radius: 10px;
-    position: relative;   
+    position: relative;
+  }
+}
+
+@media (max-width: 375px){
+  button {
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: .25rem;
+    text-align: center;
+    font-weight: 700;
+    padding: .5rem 1rem;
+    transition: .15s;
+  }
+
+  h1{
+    font-size: 2rem;
+  }
+
+  input {
+    font-size: 1.5rem;
+  }
+
+  #keys {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    margin: 20px 1px;
+    padding: 1px 1px;
+    border-radius: 15px;    
+   }
+
+  #keys button {
+    display:grid;
+    margin: 0 1px;
+    max-width: 13rem;
+    font-size: 19px;
+    padding: 0.6rem 0.2rem 1.5rem;    
+    border-radius: 10px;
+    position: relative;
   }
 
 }
