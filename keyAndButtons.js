@@ -12,7 +12,10 @@ export function buttons(ev) {
 export function clear() {  
   input.value = ''
   resultInput.value = ''
-  input.focus()
+  if (window.innerWidth <= 768) {
+    input.focus()
+    return; // sair da função se a largura da tela for menor ou igual a 320
+  }  
 }
 
 export function copy(ev) {
