@@ -11,5 +11,5 @@
 <p>Funcionalidades extra: copiar resultado com o botão copy e alternar tema.</p>
 
 <p align="center">
-  <img width="460" height="300" src="CALCULATOR.gif">
+  <img width="560" height="400" src="CALCULATOR.gif">
 </p>
