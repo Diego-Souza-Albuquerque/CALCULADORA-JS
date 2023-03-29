@@ -6,7 +6,7 @@ const resultInput = document.getElementById('result')
 input.focus()
 
 //funcionalidade para os botões:
-document.querySelectorAll('.charKey').forEach( function (charKeyBtn) {
+document.querySelectorAll('.charKey').forEach(function (charKeyBtn) {
   charKeyBtn.addEventListener('click', buttons)
 })
 
@@ -24,9 +24,9 @@ document.getElementById('themeSwitcher').addEventListener('click', switchTheme)
 
 //função de calcular o resultado:
 document.getElementById('equal').addEventListener('click', calculate)
-export function calculate(){
+export function calculate() {
   resultInput.value = 'ERRO - Revise o cálculo'
-  resultInput.classList.add('error')  
+  resultInput.classList.add('error')
   const result = eval(input.value)
   resultInput.value = result
   resultInput.classList.remove('error')

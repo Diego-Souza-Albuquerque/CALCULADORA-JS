@@ -1,9 +1,9 @@
 //função que altera os temas
 export function switchTheme() {
   const main = document.querySelector("main")
-  const root = document.querySelector(":root")  
+  const root = document.querySelector(":root")
 
-  if (main.dataset.theme === 'dark'){
+  if (main.dataset.theme === 'dark') {
     root.style.setProperty("--bg-color", "#f1f5f9")
     root.style.setProperty("--border-color", "#aaa")
     root.style.setProperty("--font-color", "#212529")
