@@ -26,8 +26,7 @@ document.getElementById('themeSwitcher').addEventListener('click', switchTheme)
 document.getElementById('equal').addEventListener('click', calculate)
 export function calculate(){
   resultInput.value = 'ERRO - Revise o cálculo'
-  resultInput.classList.add('error')
-  input.focus()
+  resultInput.classList.add('error')  
   const result = eval(input.value)
   resultInput.value = result
   resultInput.classList.remove('error')

@@ -15,7 +15,7 @@ export function clear() {
   input.focus()
 }
 
-export function copy() {
+export function copy(ev) {
   const button = ev.currentTarget
   if (button.innerText === 'Copy') {
     button.innerText = 'Copied!'
@@ -33,6 +33,10 @@ const permitidos = ["(", ")", "/", "*", "-", "+", "9", "8", "7", "6", "5", "4", 
 // funcionalidade de usar o teclado para realizar os calculos com as teclas permitidas:
 export function keyboard (e){
   e.preventDefault()
+
+  if (window.innerWidth <= 768) {
+    return; // sair da função se a largura da tela for menor ou igual a 320
+  }
   
   if (permitidos.includes(e.key)) {
     input.value += e.key
